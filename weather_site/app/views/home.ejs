@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<body>
+    <h1>Previsão do tempo</h1>
+    
+     <% if(errors !== ''){ %>
+            <%= errors %>
+    <% } %>
+    <form action="/" method="post">
+        <label for="postalCode">Busque por CEP:</label>
+        (Somente CEPs terminados em 000 e somente o principal CEP de cada localidade)
+        <input type="text" class="form-control" id="postalCode" name="postalCode">
+        <br>
+        <br>
+        <label for="placeName">Busque por nome da cidade:</label>
+        <input type="text" class="form-control" id="placeName" name="placeName">
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
